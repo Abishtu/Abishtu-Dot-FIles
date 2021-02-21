@@ -1,0 +1,8 @@
+[2021-02-20 11:30:20.198] [sharedprocess] [error] [File Watcher (node.js)] Error: ENOENT: no such file or directory, stat '/home/harikeshasuresh/.config/Code/User/snippets'
+[2021-02-20 11:30:38.587] [sharedprocess] [info] Installing extension: jackvandergriff.xresources-theme
+[2021-02-20 11:30:40.606] [sharedprocess] [info] Downloaded extension: jackvandergriff.xresources-theme undefined
+[2021-02-20 11:30:40.761] [sharedprocess] [info] Extracted extension to /home/harikeshasuresh/.vscode/extensions/.jackvandergriff.xresources-theme-1.1.0: jackvandergriff.xresources-theme
+[2021-02-20 11:30:40.761] [sharedprocess] [info] Renamed to /home/harikeshasuresh/.vscode/extensions/jackvandergriff.xresources-theme-1.1.0
+[2021-02-20 11:30:40.762] [sharedprocess] [info] Installation completed. jackvandergriff.xresources-theme
+[2021-02-20 11:30:40.764] [sharedprocess] [info] Extensions installed successfully: jackvandergriff.xresources-theme
+[2021-02-20 11:31:00.163] [sharedprocess] [info] Starting to clean up unused language packs.

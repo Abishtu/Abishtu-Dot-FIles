@@ -1,0 +1,98 @@
+{
+	"name": "xresources-theme",
+	"displayName": "Xresources Theme",
+	"description": "A theme generated with Xresources color palette",
+	"publisher": "JackVandergriff",
+	"author": "Daniele Lasagno, Jack Vandergriff",
+	"license": "MIT",
+	"version": "1.1.0",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/JackVandergriff/vscode-xresources-theme"
+	},
+	"bugs": {
+		"url": "https://github.com/JackVandergriff/vscode-xresources-theme/issues"
+	},
+	"homepage": "https://github.com/JackVandergriff/vscode-xresources-theme#readme",
+	"engines": {
+		"vscode": "^1.38.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"keywords": [
+		"theme",
+		"xresources"
+	],
+	"icon": "icon.png",
+	"activationEvents": [
+		"*",
+		"onCommand:xresourcesTheme.update"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "xresourcesTheme.update",
+				"title": "Update",
+				"category": "Xresources Theme"
+			}
+		],
+		"configuration": {
+			"title": "Xresources Theme",
+			"properties": {
+				"xresourcesTheme.autoUpdate": {
+					"type": "boolean",
+					"default": true,
+					"description": "Update automatically the theme when the Xresources color palette changes"
+				},
+				"xresourcesTheme.xresourcesPath": {
+					"type": "string",
+					"default": "~/.Xresources",
+					"description": "Path to xresources file"
+				}
+			}
+		},
+		"themes": [
+			{
+				"label": "Xresources",
+				"uiTheme": "vs-dark",
+				"path": "./themes/xresources.json",
+				"_watch": true
+			},
+			{
+				"label": "Xresources Bordered",
+				"uiTheme": "vs-dark",
+				"path": "./themes/xresources-bordered.json",
+				"_watch": true
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/node": "^10.12.21",
+		"@types/vscode": "^1.38.0",
+		"glob": "^7.1.4",
+		"tslint": "^5.20.0",
+		"typescript": "^3.3.1"
+	},
+	"dependencies": {
+		"@types/color": "^3.0.0",
+		"color": "^3.1.2",
+		"colors": "^1.4.0",
+		"fs": "0.0.1-security",
+		"os": "^0.1.1",
+		"vscode-test": "^1.2.0"
+	},
+	"__metadata": {
+		"id": "28707f6f-f120-4d1a-ab3c-6823fea5cbd1",
+		"publisherId": "372e6008-6687-464a-8dfb-21a741082a19",
+		"publisherDisplayName": "Jack Vandergriff"
+	}
+}
